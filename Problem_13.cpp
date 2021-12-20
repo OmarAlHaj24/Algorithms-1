@@ -1,12 +1,9 @@
 #include <bits/stdc++.h>
-#define ll long long
-#define endl "\n"
-#define all(x) x.begin(), x.end()
-#define _ ios::sync_with_stdio(false);cout.tie(NULL);cin.tie(NULL);
 using namespace std;
 
 vector <int> nums;
 const int MAX_SZ = 1e5;
+//Direct hashing in the array.
 int found[MAX_SZ];
 
 void find(int n){
@@ -38,10 +35,7 @@ void find(int n){
     }
 }
 
-int main() { _
-#ifndef ONLINE_JUDGE
-    freopen("input.in", "r", stdin); //freopen("output.out", "w", stdout);
-#endif
+int main() {
     nums = {8, 7, 2, 5, 3, 1};
     for(int i = 0; i < nums.size(); i++){
         found[nums[i]]++;

@@ -1,8 +1,4 @@
 #include <bits/stdc++.h>
-#define ll long long
-#define endl "\n"
-#define all(x) x.begin(), x.end()
-#define _ ios::sync_with_stdio(false);cout.tie(NULL);cin.tie(NULL);
 using namespace std;
 
 //A modified insertion sort that returns the number of swaps performed.
@@ -22,10 +18,7 @@ int insertionSort(int arr[], int n) {
     return ans;
 }
 
-int main() { _
-#ifndef ONLINE_JUDGE
-    freopen("input.in", "r", stdin); //freopen("output.out", "w", stdout);
-#endif
+int main() {
     int arr[] = {2, 1, 3, 1, 2};
     cout << insertionSort(arr, 5);
 }
